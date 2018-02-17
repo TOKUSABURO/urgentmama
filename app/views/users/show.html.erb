@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @user.district %>
+</p>
+
+<p>
+  <strong>Old:</strong>
+  <%= @user.old %>
+</p>
+
+<p>
+  <strong>Hobby:</strong>
+  <%= @user.hobby %>
+</p>
+
+<p>
+  <strong>Selfintroduction:</strong>
+  <%= @user.selfintroduction %>
+</p>
+
+<p>
+  <strong>Personality:</strong>
+  <%= @user.personality %>
+</p>
+
+<p>
+  <strong>Raisingchild:</strong>
+  <%= @user.raisingchild %>
+</p>
+
+<p>
+  <strong>Keepdog:</strong>
+  <%= @user.keepdog %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

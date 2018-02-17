@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  district: MyString
+  time: 2018-02-04 06:21:03
+  urgent: false
+  old: 1
+  hobby: MyText
+  selfintoroduction: MyText
+  personality: MyText
+  raisingchild: MyText
+  keepdog: MyText
+  cook: MyText
+
+two:
+  name: MyString
+  district: MyString
+  time: 2018-02-04 06:21:03
+  urgent: false
+  old: 1
+  hobby: MyText
+  selfintoroduction: MyText
+  personality: MyText
+  raisingchild: MyText
+  keepdog: MyText
+  cook: MyText

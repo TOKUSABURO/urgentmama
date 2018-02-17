@@ -1,0 +1,61 @@
+<%= form_for(@helper) do |f| %>
+  <% if @helper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@helper.errors.count, "error") %> prohibited this helper from being saved:</h2>
+
+      <ul>
+      <% @helper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :district %><br>
+    <%= f.text_field :district %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.datetime_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :urgent %><br>
+    <%= f.check_box :urgent %>
+  </div>
+  <div class="field">
+    <%= f.label :old %><br>
+    <%= f.number_field :old %>
+  </div>
+  <div class="field">
+    <%= f.label :hobby %><br>
+    <%= f.text_area :hobby %>
+  </div>
+  <div class="field">
+    <%= f.label :selfintoroduction %><br>
+    <%= f.text_area :selfintoroduction %>
+  </div>
+  <div class="field">
+    <%= f.label :personality %><br>
+    <%= f.text_area :personality %>
+  </div>
+  <div class="field">
+    <%= f.label :raisingchild %><br>
+    <%= f.text_area :raisingchild %>
+  </div>
+  <div class="field">
+    <%= f.label :keepdog %><br>
+    <%= f.text_area :keepdog %>
+  </div>
+  <div class="field">
+    <%= f.label :cook %><br>
+    <%= f.text_area :cook %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

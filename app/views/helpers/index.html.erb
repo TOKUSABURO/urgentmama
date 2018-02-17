@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Helpers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>District</th>
+      <th>Time</th>
+      <th>Urgent</th>
+      <th>Old</th>
+      <th>Hobby</th>
+      <th>Selfintoroduction</th>
+      <th>Personality</th>
+      <th>Raisingchild</th>
+      <th>Keepdog</th>
+      <th>Cook</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @helpers.each do |helper| %>
+      <tr>
+        <td><%= helper.name %></td>
+        <td><%= helper.district %></td>
+        <td><%= helper.time %></td>
+        <td><%= helper.urgent %></td>
+        <td><%= helper.old %></td>
+        <td><%= helper.hobby %></td>
+        <td><%= helper.selfintoroduction %></td>
+        <td><%= helper.personality %></td>
+        <td><%= helper.raisingchild %></td>
+        <td><%= helper.keepdog %></td>
+        <td><%= helper.cook %></td>
+        <td><%= link_to 'Show', helper %></td>
+        <td><%= link_to 'Edit', edit_helper_path(helper) %></td>
+        <td><%= link_to 'Destroy', helper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Helper', new_helper_path %>
