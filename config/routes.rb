@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  get 'top/index'
+  resources :inquiries
+  devise_for :users
 
   resources :services
   resources :helpers
   resources :users
 
   root 'top#index'
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
