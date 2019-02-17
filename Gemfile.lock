@@ -84,7 +84,6 @@ GEM
       sprockets (> 2, < 4)
       tilt
     libv8 (3.16.14.19)
-    libv8 (3.16.14.19-x86_64-linux)
     loofah (2.1.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -212,4 +211,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.16.1
+   2.0.1
