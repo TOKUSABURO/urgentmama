@@ -10,10 +10,11 @@
 <body>
 
   <header>
+  　<nav class="navbar navbar-default navbar-fixed-top">
     <ul>
-      <li><a href="#">トップページ</a></li>
-      <li><a href="#">お問い合わせ</a></li>
-      <li><a href="#">お願いする</a></li>
+      <li><%= link_to 'トップページ', root_path %></li>
+      <li><%= link_to 'ヘルパー登録', new_helper_path %></li>
+      <li><%= link_to 'お願いする', new_service_path %></li>
       <li><a href="#">助ける</a></li>
 
           <% if user_signed_in? %>
@@ -24,14 +25,18 @@
               <li><%= link_to 'サインアップ', new_user_registration_path %></li>
           <% end %>
   　  </ul>
+  　 </nav>
 
   </header>
 
 <%= yield %>
 
 <footer>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
   <p>運営会社 URGENTMAMA</p>
   <p>© 2017-2018 Copyright URGENTMAMA Corp.</p>
+  </nav>
+  
 </footer>
 
 </body>
