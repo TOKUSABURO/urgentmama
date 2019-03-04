@@ -36,18 +36,13 @@ header ul:after {
 }
 
 .main-header {
-  padding-bottom: 15%;
-  width: 100%;
-  background-size: cover;
-  background-image: url("images-master/header.jpg");
+  background-image: url(urgentmama1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.main-header img {
-  display: block;
-  margin: 0 auto;
-  width: 25%;
-  padding-top: 15%;
+  background-size: cover;
+  background-color: #464646;
+  z-index: 0;
 }
 
 .about {
